@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/main_style.css" />
+    <link rel="stylesheet" href="./styles/tooltips.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+
+    <script src="./script/myscript.js"></script>
+    
+    <title>Gymo</title>
+    <link rel="icon" type="image/x-icon" href="./src/logo.jpg">
+  </head>
+  <body style="font-family: Urbanist !important;">
+    <div class="container">
+      <div class="main_contents" id="main_contents">
+
+
+        <div class="header row">
+          <div class="col-md-6"  style="color: white">
+              <p style="margin-left:4%; margin-top:2%; font-weight: bolder;">EBENEZER GC INNOVATIONS</p>
+              <h1 style="margin-top: 10%; margin-left: 10%; font-family: Oswald; font-size: xx-large; font-weight: bolder;">Real life services at your fingertips</h1>
+              <p style="margin-left: 10%; font-weight: bolder; margin-top: 10%;"><span style="margin-right: 3%;">&#10003;</span>100%  Local workers</p>
+              <p style="margin-left: 10%; font-weight: bolder;"><span style="margin-right: 3%;">&#10003;</span>100%  Satisfaction guaranteed</p>
+              <p style="margin-left: 10%; font-weight: bolder;"><span style="margin-right: 3%;">&#10003;</span>100%  Licensed & Insured</p>
+              <p style="margin-left: 10%; font-weight: bolder;"><span style="margin-right: 3%;">&#10003;</span>13+ years of experience</p>
+              <button class="btn" style="background-color: #3E97FF;color: white; width: 35%; border-radius: 5px; margin-top: 10%; margin-left: 10%;"><a target="_blank" href="https://www.ebenezerroofingva.com/request-a-quote" style="color: white !important;">In-Person Consultation</a></button>
+              <button class="btn" style="background-color: #3E97FF;color: white; width: 35%; border-radius: 5px; margin-top: 10%;"><a target="_blank" href="https://visibook.com/xecmxwc6y2q4ymamz" style="color: white !important;">Schedule Yourself</a></button>
+            </div>
+            <div class="col-md-6 row">
+              
+              
+              <div>
+                <button type="button" id="connect_wallet" class="btn" value="Connect Wallet" onclick="connect();" style="float: right;
+                background-color: #C93838;
+                color: white;
+                margin-right: 20%;
+                margin-top: 5%;
+                display: flex;
+                align-items: flex-end;">Connect Wallet</button>
+              </div>
+              <div class="row" style="display: flex; align-items: flex-end; margin-bottom: -6%; height: 75%;">
+              <div class="col-md-2 column"><img src="./src/Intro_1.png" style="border-radius: 10px;"></div>
+              <div class="col-md-3 column"><img src="./src/Intro_2.png" style="border-radius: 10px;"></div>
+              <!-- <img class="col-md-5" src="./src/Intro_3.png" style="height: 100%;"> -->
+              <div class="col-md-5" style="height: 100%">
+                <div class="carousel slide" data-bs-ride="carousel" style="height: 100%;" style="height: 100%">
+                  <div class="carousel-inner" style="height: 100%; border-radius: 10px;">
+                    <div class="carousel-item active" style="height: 100%; border-radius: 10px;">
+                      <img src="./src/Intro_3.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item" style="height: 100%; border-radius: 10px;">
+                      <img src="./src/Intro_4.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item" style="height: 100%; border-radius: 10px;">
+                      <img src="./src/Intro_5.jpg" alt="New York" class="d-block" style="width:100%"> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="billing_details row">
+                    <div class="text-center"><h3>Billing Details</h3></div>
+                    <form action="/action_page.php" id="billing" name="billing">
+                      <div class="row">
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="firstname" class="form-label">First Name:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="firstname"
+                            placeholder="Enter First Name"
+                            name="firstname"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="lastname" class="form-label">Last Name:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="lastname"
+                            placeholder="Enter Last Name"
+                            name="lastname"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="country" class="form-label">Country:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="country"
+                            placeholder="Enter Country"
+                            name="country"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="city" class="form-label">City:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="city"
+                            placeholder="Enter City"
+                            name="city"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="postcode" class="form-label">Postcode:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="postcode"
+                            placeholder="Enter Postcode"
+                            name="postcode"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="phone" class="form-label">Phone:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="phone"
+                            placeholder="Enter Phone"
+                            name="phone"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="email" class="form-label">Email Address:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter email"
+                            name="email"
+                          />
+                        </div>
+                        <div class="mb-3 mt-3 col-md-6">
+                          <label for="street" class="form-label">Street Address:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="street"
+                            placeholder="Enter Street Address"
+                            name="street"
+                          />
+                        </div>
+                        
+                        </div>
+                        <input type="submit" value="Submit" style="display: none;">
+                      </div>
+                    </form>
+                  </div>
+            </div>
+ 
+        
+        <div class="services">
+            <h2 class="mt-4 text-center">Choose your services</h2>
+            <div class="row services_group" style="display: flex; justify-content: space-around; margin-left: -3% !important;">
+                <div class="col-sm-2 service shadow">
+                    <div class="avatar_window"></div>
+                    <div class = "service_content">
+                        <h3 style="margin-bottom: 4%;">Window Maintenance</h3>
+                        <p data-tooltip="WINDOW MAINTENANCE
+-scope of work-
+1. A total of 3 windows are included in these proposal, $65 usd for every other additional window.
+2. Each window will be serviced by applying an exterior window sealent, according to manufactures specificacion.
+3. Color of caulking does not effect the price, colors or brand can be effected, according to nearest appliance store. &#xa; &#xa; The importance of window maintenance:
+If left without care, the windows can stain, scratch, and corrode easily, but regular window maintenance enhances durability.
+If you keep your windows well maintained, you may not have to worry about replacement in a long time,
+which will save you money in the long run." data-tooltip-location="right">3 windows included. a minimum of 3 winodw caulking and maintenance on the exterior of the window.</p>
+                    </div>
+                    <button type="button" class="btn btn-danger"  value="150" title="window maintenance" style="float: right; margin-bottom: 5%;" onclick="cart(this.title, this.value)">Add to Cart: $150</button>
+                </div>
+                <div class="col-sm-2 service shadow">
+                    <div class="avatar_roof"></div>
+                    <div class = "service_content">
+                        <h3 style="margin-bottom: 4%;">Roof Maintenance</h3>
+                        <p data-tooltip="ROOF MAINTENANCE
+-scope of work-
+1. Inspect entire roof for any possible water leaks. seal the roof properly; by using exterior caulking, nails or shingles.
+2. These proposal includes up to 10 shingles to be repaired. Exposed nails will be caulked and up to 2 rubber boots to be replaced.
+3. The brand, style and color will be effected according to the appliance stores availability.
+4. Repairs are not covered by any sorts of warranty or guaranteed to stop a leak. &#xa; &#xa; The importance of roof maintenance:
+The general answer is that you should have a professional inspect your roof at least once per year, 
+with the building owner performing regular, year-round care, especially after bad weather." data-tooltip-location="right">Inspect entire roof of any water leakage penetrations. service includes roof caulkin for any exposed nails, ...</p>
+                    </div>
+                    <button type="button" class="btn btn-danger" value="750" title="roof maintenance" style="float: right; margin-bottom: 5%;"  onclick="cart(this.title, this.value)">Add to Cart: $750</button>
+                </div>
+                <div class="col-sm-2 service shadow">
+                    <div class="avatar_gutter"></div>
+                    <div class = "service_content">
+                        <h3 style="margin-bottom: 4%;">Gutter Cleaning</h3>
+                        <p data-tooltip="GUTTER CLEANING
+-scope of work-
+1. Clean the entire gutter system, water hose the downspouts.
+2. Leaves will be removed from the gutters, additional charge for any leaf guard removals.
+3. Up to 50 linear feet of gutter will be cleaned, anything above 50LFT will have an additional charge.
+4. All work related material will be hauled away, and leafs will be trashed.
+&#xa; &#xa; The importance of gutter cleaning:
+How Often Should You Clean Your Gutters? Speaking in general terms,
+you should make a point of cleaning your gutters at least twice a year.
+Depending on what sort of foliage you have near your home." data-tooltip-location="left">Clean the entire gutter system. water hose the downspouts, install Gutter Guard Filters. up to 100 lft of gutters.</p>
+                    </div>
+                    <button type="button" class="btn btn-danger" value="110" title="gutter cleaning" style="float: right; margin-bottom: 5%;"  onclick="cart(this.title, this.value)">Add to Cart: $110</button>
+                </div>
+                <div class="col-sm-2 service shadow">
+                    <div class="avatar_window_screen"></div>
+                    <div class = "service_content">
+                        <h3 style="margin-bottom: 4%;">Window Screen Replace</h3>
+                        <p data-tooltip="WINDOW SCREEN REPLACEMENT
+-scope fow work-
+1. These proposal includes 5 window screens to be replaced.
+2. Additional windows will be charged at a rate of $85USD per screen.
+3. The frame may be re-used, according to the condition it is in.
+4. Frame is included if replacement is necessary.  
+&#xa; &#xa; Your window screens provide some protection against 
+dust, dirt, and other elements that can make your windows look grungy. 
+Next time when it is time to do some spring cleaning, give your screens some love." data-tooltip-location="right">Replace up to 5 window screens, at a price of $85 per screen, a minimum of 5 window screens. After that...</p>
+                    </div>
+                    <button type="button" class="btn btn-danger" value="425" title="window screen replace" style="float: right; margin-bottom: 5%;"  onclick="cart(this.title, this.value)">Add to Cart: $425</button>
+                </div>
+                <div class="col-sm-2 service shadow">
+                    <div class="avatar_aluminium_fasica"></div>
+                    <div class = "service_content">
+                        <h3 style="margin-bottom: 4%;">Aluminium Fasica Boards</h3>
+                        <p data-tooltip="ALUMINUM FASCIA BOARD (CAP)
+-scope of work-
+1. 40 linear feet of aluminum cap fascia board is included.
+2. $15 per linear feet for any additional foot. 
+3. The wood will be inspected and if any is in need of replacement,
+there will be an additional charge of $8 per foot, minimum of 10 foot, to account for waste. &#xa; &#xa; The importance of aluminum fascia:
+Fascia plays an essential role in keeping your home watertight. Some fascia material may not provide enough coverage, 
+which will allow water to seep into your home. Aluminum fascia, on the other hand,
+will provide an impermeable barrier, meaning your home will stay nice and dry in even the worst storms." data-tooltip-location="right">Install 30 linear feet of alluminium cap fasica board, a minimum of 30 linear feet is included, $15 per foot after that...</p>
+                    </div>
+                    <button type="button" class="btn btn-danger" value="540" title="aluminium fasica boards" style="float: right; margin-bottom: 5%;"  onclick="cart(this.title, this.value)">Add to Cart: $540</button>
+                </div>
+                <div class="col-sm-2 service shadow">
+                    <div class="avatar_powerwashing"></div>
+                    <div class = "service_content">
+                        <h3 style="margin-bottom: 4%;">Power Washing</h3>
+                        <p data-tooltip="POWERWASHING
+-scope of work-
+1. Powerwash driveways up to 20’ x10’ and wood decks 20’x 10’ 
+2. There will be an additional charge of $50 per SQFT after that.
+3. Chemicals will be used according to the type of surface being powerwashed. &#xa; &#xa; The importance of powerwashing:
+By scraping off layers of dust, allergens, and mold, 
+pressure washing gets rid of those irritants and cleans off surfaces so you can reclaim your home and your health." data-tooltip-location="left">Powerwash driveways up to 20’ x10’ and wood decks 20’x 10’ chemicals will be used according to home depot...</p>
+                    </div>
+                    <button type="button" class="btn btn-danger" value="550" title="power washing" style="float: right; margin-bottom: 5%;"  onclick="cart(this.title, this.value)">Add to Cart: $550</button>
+                </div>
+            </div>
+        </div>
+        <div id="price"></div>
+
+
+        <div class="warranty_pay row shadow rounded"> 
+            <div class="warranty_pay_img col-sm-3"></div>
+            <div class="warranty-pay_contents col-sm-8">
+              <div>
+                <h3 class="">Sleep calm with a warrantied project</h3>
+                <h6 style="margin-top: 8%; margin-bottom: 3%">1 week Labor warrranty is included on any purchased service. The warranty starts the day the service was completed, an email or printed copy will be given to sign and keep for your records.</h6>
+                <p style="margin-bottom: 0; margin-top: 2%"></p>
+                <div style="margin-bottom: 0; margin-top: 2%">
+                    <input class="form-check-input" type="radio" name="warranty" name="warranty" value="75">
+                    <label>1 month: $75</label>
+                </div>
+                <div style="margin-bottom: 0; margin-top: 2%">
+                    <input class="form-check-input" type="radio" name="warranty" name="warranty" value="125">
+                    <label>3 months: $125 (recommended)</label>
+                </div>
+                <div style="margin-bottom: 0; margin-top: 2%">
+                    <input class="form-check-input" type="radio" name="warranty" name="warranty" value="185">
+                    <label>6 months: $185 </label>
+                </div>
+                
+              </div>
+              <div>  <button type="button" class="btn btn-danger" id="warranty_btn" title="warranty" style="float: right; margin-bottom: 5%;" onclick="add_warranty()" disabled="true">Add to Cart</button></div>
+            </div>
+
+        </div>
+
+
+        <div class="steps row">
+            <div class="col-md-4"></div>
+            <img src="./src/Herbert_qrcode.jpg" alt="QR code" id="owner_qrcode" style="display: none; width: 24%; margin-left: 4.4%;" >
+            <div class="col-md-4"></div>
+            <div class="col-md-3"></div>
+            <form id="payment_method" class="col-md-6 text-center" style="display: none; margin-top: 2%;">
+              <div>
+                <label class="radio-inline col-md-4">
+                <input type="radio" name="payment_method" style="margin-right: 3%;" value="mmfinance-polygon">Matic
+              </label>
+              <label class="radio-inline col-md-3">
+                <input type="radio" name="payment_method" style="margin-right: 3%;" value="ether">ETH
+              </label>
+              <label class="radio-inline col-md-4">
+                <input type="radio" name="payment_method" style="margin-right: 3%;" value="usdc" checked>USDC
+              </label>
+              </div>
+              
+              <label class="radio-inline col-md-12" style="margin-top:2%">
+                <input type="radio" name="payment_method" style="margin-right: 1%;" value="helium">HNT: 14iAm47naQpHm6cdyuo2vyEvfELCm6tzwWUPGvdD6TgBzWZAxUo
+              </label>
+            </form>
+            <ul class="list-group">
+                <li class="list-group-item bg-white">
+                    <button type="button" id="verify" class="btn btn_steps col-md-5" onclick="submitBillingDetail()">Quick Verify</button>
+                </li>
+                <li class="list-group-item bg-white">
+                    <button type="button" id="release_funds" data-bs-toggle="modal" data-bs-target="#release_confirmation" class="btn btn_steps col-md-5" disabled="true">Release Funds</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="service_area">
+          <h2 class="text-center mb-3" style="margin-bottom: 3% !important;">Proudly servicing the areas of Washington DC, North VA, and Maryland</h2>
+          <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198740.08541741193!2d-77.15466045526063!3d38.89393804146433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7bb1b7fd31a99%3A0x9bfd454dd0fa58a7!2sEbenezer%20GC%20Innovation%20-%20Affordable%20Basement%20Remodel%2C%20Reliable%20Bathroom%20Remodeling%2C%20Quality%20Home%20Remodeling!5e0!3m2!1sen!2sru!4v1661528053004!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    <footer class="row" id="footer">
+        <div class="col-md-4"></div>
+      <div class="get_started col-md-3">
+          <button type="button" class="btn btn_start "><a target="_blank" href="https://www.ebenezerroofingva.com/request-a-quote">Get Started &#8594;</a></button>
+      </div>
+      <div class="contact_address col-md-4">
+        <label>CONTACT DETAILS</label>
+        <p>Address:</p>
+        <p>7819 Old Centreville Rd.</p>
+        <p>Manassas. VA 20111</p>
+        <p>Phone No:</p>
+        <p>(703) 763-6130</p>
+        <p>Email</p>
+        <p>ebenezerroofcontractor@gmail.com</p>
+      </div>
+    </footer>
+    </div>
+
+<!-- Modals -->
+
+
+    <!-- The Released Modal -->
+
+    <div class="modal fade" id="after_release">
+      <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <div class="text-center" style="width: 100%;"><h4 class="modal-title" >Thank You!</h4></div>
+              
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              Your Order Is Confirmed. Please Check Your Inbox.<br>
+              (If you don't get an email in 5 mins, check your spam message.)
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+  </div>
+
+    <!-- Custom Validtion Modal -->
+    <div class="modal fade" id="customValidation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <div class="text-center" style="width: 100%;"><h4 class="modal-title" >Please Confirm Your Billing Details</h4></div>
+                
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body text-center">
+                All fields must be filled out.
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+    </div>
+
+
+    <!-- Email Validtion Modal -->
+    <div class="modal fade" id="emailValidation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <div class="text-center" style="width: 100%;"><h4 class="modal-title" >Please Confirm Your Billing Details</h4></div>
+                
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body text-center">
+                Email address is not valid method.
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+    </div>
+
+    <!-- Release Confirmation Modal -->
+    <div class="modal fade" id="release_confirmation">
+      <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <div class="text-center" style="width: 100%;"><h4 class="modal-title" >Are You Sure About This?</h4></div>
+              
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body row">
+              <div class="confirm_contents text-center">
+                  
+                  <div class="released_info_group row col-md-10">
+
+                    <table class="table row" style="margin-left: 0.5%;">
+                      <thead>
+                        <tr class="row col-md-12">
+                          <th class="col-md-4">No</th>
+                          <th class="col-md-4">Scope</th>
+                          <th class="col-md-4">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody id="release_confirm_table">
+                        
+                        <script>
+                          $( "#release_confirmation" ).on('shown.bs.modal', function(){
+                            // alert("I want this to appear after the modal has opened!");
+                            let customer_info_HTML = '';
+                            let index = 1;
+                            for (let temp of customer_info){
+                              if(!temp[1]) continue;
+                              else{
+                                total_price += parseInt(temp[1]);
+                                customer_info_HTML += '<tr class="table-active row">'+'<td class="col-md-4">'+index+'</td>'+'<td class="col-md-4">'+temp[0]+'</td>'+'<td class="col-md-4">'+temp[1]+'</td></tr>'; 
+                                index++;
+                                
+                              }
+                              
+                            } 
+                            $("#release_confirm_table").html(customer_info_HTML);
+                            $("#release_confirm_btn").html("Confirm with Total $"+total_price);
+                            total_price_for_confirm = total_price;
+                            total_price = 0;
+                        });
+                        
+                        </script>
+
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+          </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="release_confirm_btn" data-bs-dismiss="modal" onclick="release()">Confirm</button>
+            </div>
+      
+          </div>
+        </div>
+  </div>
+  
+  
+
+</body>
+
+<script>
+  window.addEventListener('load',async (event) => {
+
+    for(let crypto of crypto_id){
+      await get_price(crypto);
+    }
+
+
+  });
+
+  $('input[type=radio][name=warranty]').change(function() {
+      document.querySelector('#warranty_btn').disabled = false
+  })
+
+  
+</script>
+</html>
